@@ -3,7 +3,6 @@ FROM python:3.10.8-slim-buster
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
-ENV PORT=10000
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
@@ -25,8 +24,8 @@ RUN pip3 install --no-cache-dir --upgrade pip && \
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
 
-# Expose port for Render
-EXPOSE $PORT
+# Expose port 8080
+EXPOSE 8080
 
 # Run the start script
 CMD ["/bin/bash", "/start.sh"]
