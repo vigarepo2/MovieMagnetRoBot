@@ -143,7 +143,7 @@ async def start(client, message):
             buttons = [[
                         InlineKeyboardButton('⛩️ 𝖥𝗂𝗅𝗆𝗒 𝖬𝖾𝗇', url=f'https://t.me/FILMY_MEN')
                     ],[
-                        InlineKeyboardButton('🎫 𝖯𝗋𝖾𝗆𝗂𝗎𝗆', callback_data='seeplans),
+                        InlineKeyboardButton('🎫 𝖯𝗋𝖾𝗆𝗂𝗎𝗆', callback_data='seeplans'),
                         InlineKeyboardButton('🪐 𝖦𝗋𝗈𝗎𝗉', url=GRP_LNK)                        
                     ],[
                        InlineKeyboardButton('⚠️ 𝖣𝖨𝗌𝖼𝗅𝖺𝗂𝗆𝖾𝗋', callback_data='disclaimer'),
